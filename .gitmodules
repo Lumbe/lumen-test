@@ -1,0 +1,3 @@
+[submodule "laradock-mls-api"]
+	path = laradock-mls-api
+	url = https://github.com/Laradock/laradock.git
