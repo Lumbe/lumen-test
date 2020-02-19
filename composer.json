@@ -30,7 +30,12 @@
     "scripts": {
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ]
+        ],
+        "start": [
+            "cd laradock-mls-api/ && docker-compose up -d nginx postgres pgadmin"
+        ],
+        "workspace": "cd laradock-mls-api/ && docker-compose exec workspace bash",
+        "stop": "cd laradock-mls-api/ && docker-compose stop"
     },
     "config": {
         "preferred-install": "dist",
